@@ -1,0 +1,36 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  color: #222;
+}
+h1, h2 {
+  font-weight: 700; 
+}
+
+html {
+  scroll-behavior: smooth;
+} 
+
+
+/* Error page */
+.centered-error {
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.centered-error h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.centered-error a {
+  color: #0057ff;
+  text-decoration: underline;
+}
