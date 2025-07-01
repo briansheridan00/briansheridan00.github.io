@@ -36,6 +36,18 @@
   margin-bottom: 1.5rem;
 } 
 
+.card-content a {
+  text-decoration: none;
+  color: #0057ff;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;  
+}
+
+.card-content a:hover{
+  border-color: #0057ff;  
+}
+
 .card-link a {
   text-decoration: none;
   color: #0057ff;
@@ -49,7 +61,7 @@
 }
 
 
-/* Cards for about.html page */
+/* Cards for pages */
 .page-card { 
   align-items: center;
   border-radius: 16px; 
@@ -62,10 +74,25 @@
   background-color: #fff;
 }
 
+.about-card .about-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* optional: align to left within the column */
+  gap: 1rem;                /* space between images */
+}
+
+.about-card .about-images img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 .page-card .card-content {
   flex: 1;
 }
-
 
 .page-card .card-image img { 
   max-width: 250px;
@@ -74,6 +101,7 @@
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1rem; 
 } 
 
 .card-content ul {

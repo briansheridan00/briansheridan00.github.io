@@ -45,6 +45,26 @@
   font-size: 1.3rem;
 } 
 
+.hero a {
+  text-decoration: none;  /* remove underline */
+  color: white;         /* default text color */
+}
+
+/* Also make sure visited and active links stay white and no underline */
+.hero a:visited,
+.hero a:active,
+.hero a:hover {
+  text-decoration: none;
+  color: white;
+  cursor: pointer; /* optional, shows pointer on hover */
+}
+
+.hero a:hover {
+  color: #ddd; /* lighter white/gray on hover */
+  text-decoration: none;
+}
+
+
 
 /* Scoll down styles */
 .scroll-down {
@@ -118,7 +138,7 @@
 
 .page-title a {
   text-decoration: none;  /* remove underline */
-  color: white;           /* default text color */
+  color: white;         /* default text color */
 }
 
 /* Also make sure visited and active links stay white and no underline */
