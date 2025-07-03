@@ -65,7 +65,6 @@
 }
 
 
-
 /* Scoll down styles */
 .scroll-down {
   position: absolute;
@@ -115,10 +114,31 @@
 }
 */ 
 
+/* Hero Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive hero text */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
 
 /* Define a banner for sub-pages */ 
 .banner {
-  position: relative;
+  position: static;
   background: url("../img/GalaxySky.jpg") center/cover no-repeat;
   height: 200px;                /* smaller fixed height for a banner */
   display: flex;
@@ -126,7 +146,7 @@
   justify-content: center;
   color: white;
   text-shadow: 0 2px 6px rgba(0,0,0,0.5);
-  overflow: hidden;
+  overflow: visible;
 } 
 
 

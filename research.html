@@ -5,46 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Me - Brian Sheridan</title>
   <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/hero.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/hero.css" /> 
   <link rel="stylesheet" href="css/cards.css"/> 
   <link rel="stylesheet" href="css/footer.css"/>  
+  <link rel="stylesheet" href="css/navigation.css"/> 
+  <link rel="stylesheet" href="css/page-cards.css"/> 
   <link rel="icon" type="image/png" href="img/favicon.png"/> 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet"> 
 </head> 
 <body>
 
+
   <header class="banner"> 
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container"> 
+        <div class="nav-toggle" id="nav-toggle">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+        </ul>
+      </div>
+    </nav>     
     <div class="page-title"> 
     <a href="index.html"><h1>Brian Sheridan</h1></a>
     </div> 
   </header>
 
   <main class="section">
-    <div class="card page-card about-card"> 
-      <div class="card-content">
+    <div class="page-card"> 
+      <div class="page-card-content">
         <h2>Gravitational Lensing</h2> 
         <p>
             An internship at the data science research organisation 
             <a href="https://www.toelt-ailab.com/" target="_blank">Toelt AI</a>
             has allowed me an intimate view into the physics of gravitational lensing. 
-            In conjunction with academic faculty at the University of Milan I have assisted 
+            In conjunction with academic faculty at the University of Milan I have assisted in 
             developing efficient gravitational lensing software written in Julia, which 
-            can handle a wise range of strong lensing systems to determine the underlying 
-            parameters using Bayesian statistics. Significant study of gravitaitonal 
-            lensing was conducted during this time, to supplement the computational understanding. 
+            can handle a wide range of strong lensing systems to determine the underlying 
+            parameters using Bayesian statistics. Significant study of gravitational 
+            lensing was conducted during this time, to supplement the understanding of 
+            computational methods. 
         </p> 
 
         <p>
             Find here a link to a presentation giving an overview of the main conceptual
             topics in gravitational lensing prepared during this internship:
-            <div class="card-link">
+            <div class="page-card-link">
             <a href="files/GravitationalLensingPresentation.pdf" target="_blank">Presentation Slides</a> 
             </div>
         </p>
       </div>
-      <div class="card-image about-images"> 
+      <div class="page-card-images"> 
         <img src="img/GravitationalLensingEx.png" alt="Image example of point mass lensing"/> 
       </div>
     </div>
@@ -52,8 +66,8 @@
 
 
   <main class="section">
-    <div class="card page-card about-card"> 
-      <div class="card-content">
+    <div class="page-card"> 
+      <div class="page-card-content">
         <h2>Approximate Bayesian Computing (ABC)</h2> 
         <p>
             During my studies at ETH Zürich I conducted a course in Bayesian Statistics and 
@@ -62,27 +76,27 @@
             classical Bayesian statistics, the posterior distribution is equal to the product 
             of a likelihood function multiplied by a prior distribution and divided by 
             the evidence, a marginalisation factor. Often it is difficult to find a tractable 
-            analytic solution to the likelihood function. ABC bypasses the need for this by 
-            synthetically generating data, with which the posterior can be found.
+            analytic solution to the likelihood function. ABC bypasses the need for a likelihood function
+            by synthetically generating data, with which the posterior can be found.
         </p> 
 
         <p>
             Linked here is the report for this course, where I investigated both discrete and 
             continuous data spaces: 
-            <div class="card-link">
+            <div class="page-card-link">
             <a href="files/ABC_Report_BrianSheridan.pdf" target="_blank">Report</a> 
             </div>
         </p>
       </div>
-      <div class="card-image about-images"> 
+      <div class="page-card-images"> 
         <img src="img/ABC_CoinFlip.png" alt="Posterior of biased coin with ABC"/> 
       </div>
     </div>
   </main> 
 
   <main class="section">
-    <div class="card page-card about-card"> 
-      <div class="card-content">
+    <div class="page-card"> 
+      <div class="page-card-content">
         <h2>Effect of Stellar Mass and Orbital Radius on Giant Planet Formation</h2> 
         <p>
             I conducted my Master's thesis in the field of planetary formation, 
@@ -91,28 +105,28 @@
             observations show a large range of giant planets found, which indicate a 
             great magnitude of them in our universe. Formation models, however, often 
             neglect the effects of the stellar system in the formation of giant planets. 
-            MY thesis aimed to determine fitted equations of predicting gas accretion rates, 
-            then using these, alongside solid accretion rates, to investigate the environmental 
-            effects in giant planet formation. 
+            My thesis aimed to determine new forms of fitting equations used in predicting 
+            gas accretion rates, then to use these alongside solid accretion rates 
+            to investigate the environmental effects in giant planet formation. 
         </p>
 
         <p>
-            My Master's thesis is linked here, overviewing my research efforts with gas giant 
+            My Master's thesis is linked here, overviewing my research efforts of gas giant 
             planet formation: 
-            <div class="card-link">
+            <div class="page-card-link">
             <a href="files/ThesisMSc_BrianSheridan.pdf" target="_blank">Master's Thesis</a> 
             </div> 
         </p>
       </div>
-      <div class="card-image about-images"> 
+      <div class="page-card-images"> 
         <img src="img/GiantPlanetFormationTimes.png" alt="Plot of giant planet formation times"/> 
       </div>
     </div>
   </main>
 
   <main class="section">
-    <div class="card page-card about-card"> 
-      <div class="card-content">
+    <div class="page-card"> 
+      <div class="page-card-content">
         <h2>Parameter Estimation for the OJ 287 System</h2> 
 
         <p>
@@ -129,14 +143,14 @@
 
         <p>
             Linked here is my Bachelor's thesis and the summer internship report:
-            <div class="card-link">
+            <div class="page-card-link">
             <a href="files/ThesisBSc_BrianSheridan.pdf" target="_blank">Bachelor's Thesis</a> 
             |
             <a href="files/OJ287Report.pdf" target="_blank">Internship Report</a>  
             </div>         
         </p> 
       </div>
-      <div class="card-image about-images"> 
+      <div class="page-card-images"> 
         <img src="img/BlackHole.png" alt="Image of a binary black hole"/> 
       </div>
     </div>
@@ -153,5 +167,15 @@
       </div>
     </div>
   </footer> 
+
+  <!-- Toggle navigation bar -->  
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const links = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>   
 </body>
 </html>

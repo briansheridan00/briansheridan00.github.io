@@ -5,18 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brian Sheridan</title>
   <link rel="stylesheet" href="css/main.css"/> 
-  <link rel="stylesheet" href="css/hero.css"/>
-  <link rel="stylesheet" href="css/responsive.css"/> 
+  <link rel="stylesheet" href="css/hero.css"/> 
   <link rel="stylesheet" href="css/cards.css"/> 
   <link rel="stylesheet" href="css/footer.css"/> 
+  <link rel="stylesheet" href="css/navigation.css"/> 
+  <link rel="stylesheet" href="css/page-cards.css"/> 
   <link rel="icon" type="image/png" href="img/favicon.png"/> 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
+  <!-- Navbar -->
+  <!-- <nav class="navbar">
+    <div class="nav-container"> 
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li> 
+      </ul> 
+    </div>
+  </nav>  --> 
+
   <!-- Hero Section -->
-  <section class="hero" id="home">
+  <section class="hero" id="home"> 
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container"> 
+        <div class="nav-toggle" id="nav-toggle">☰</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+        </ul>
+      </div>
+    </nav>  
+
     <div class="hero-overlay"></div> <!-- Overlay -->
     <div class="hero-text">
       <a href="index.html"><h1>Brian Sheridan</h1></a> 
@@ -58,7 +82,7 @@
   </section> 
 
   <!-- Bog posts section -->
-  <section class="card-section" id="Posts"> 
+  <!-- <section class="card-section" id="Posts"> 
     <div class="card">
       <div class="card-content">
         <h2>Posts</h2>
@@ -69,6 +93,7 @@
       </div>
     </div>
   </section>    
+  -->
 
   <!-- Footer section -->
   <footer class="site-footer">
@@ -81,5 +106,16 @@
       </div>
     </div>
   </footer>
+
+  <!-- Toggle navigation bar -->  
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const links = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script> 
+</body>  
 </body>
 </html> 
