@@ -36,7 +36,7 @@
 }
 
 .nav-links li a:hover {
-  color: white;
+  color: #ddd; 
 }
 
 .nav-toggle {
