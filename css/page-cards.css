@@ -2,13 +2,14 @@
 .page-card {
   display: flex;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 16px;
   gap: 2rem;
   padding: 2rem;
   max-width: 900px;
   margin: 3rem auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Text content */
