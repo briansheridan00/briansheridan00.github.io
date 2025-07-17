@@ -103,7 +103,8 @@
 @media (max-width: 768px) {
   .page-card {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /*flex-start;*/ 
+    justify-content: center;    /* Optional: vertically center if needed */ 
     padding: 2rem;
   }
 
