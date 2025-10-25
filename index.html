@@ -14,21 +14,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet"> 
 </head>
-<body>
-
-  <!-- Navbar -->
-  <!-- <nav class="navbar">
-    <div class="nav-container"> 
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="research.html">Research</a></li> 
-      </ul> 
-    </div>
-  </nav>  --> 
+<body>  
 
   <!-- Hero Section -->
   <section class="hero" id="home"> 
+    <div class="hero-overlay"></div> 
+
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-container"> 
@@ -41,12 +32,18 @@
       </div>
     </nav>  
 
-    <div class="hero-overlay"></div> <!-- Overlay -->
-    <div class="hero-text">
-      <a href="index.html"><h1>Brian Sheridan</h1></a> 
-      <p>Graduate MSc Physics ETH Zürich</p> 
-      <p>Researcher • Physicist</p>
+    <div class="hero-content">
+      <div class="hero-text">
+        <a href="index.html"><h1>Brian Sheridan</h1></a> 
+        <p>Graduate MSc Physics ETH Zürich</p> 
+        <p>Researcher • Physicist</p>
+      </div>
+
+      <div class="profile-pic">
+        <img src="img/BrianSheridan_pic.jpg" alt="Profile picture">
+      </div>
     </div>
+
     <div class="scroll-down">
       <span>more below</span>
       <a href="#about" class="scroll down"> 
@@ -108,16 +105,6 @@
   </footer>
 
 
-
-  <!-- Toggle navigation bar -->  
-  <!--<script>
-    const toggle = document.getElementById('nav-toggle');
-    const links = document.getElementById('nav-links');
-
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('active');
-    });
-  </script> --> 
   <script src="js/script.js"></script> 
 </body>  
 </body>
