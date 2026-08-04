@@ -4,108 +4,112 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brian Sheridan</title>
-  <link rel="stylesheet" href="css/main.css"/> 
-  <link rel="stylesheet" href="css/hero.css"/> 
-  <link rel="stylesheet" href="css/cards.css"/> 
-  <link rel="stylesheet" href="css/footer.css"/> 
-  <link rel="stylesheet" href="css/navigation.css"/> 
-  <link rel="stylesheet" href="css/page-cards.css"/> 
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/cards.css"/>   
   <link rel="icon" type="image/png" href="img/favicon.png"/> 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Bookmanly:wght@700&display=swap" rel="stylesheet">  
 </head>
-<body>  
+<body>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home"> 
-    <div class="hero-overlay"></div> 
+    <!-- Fixed left sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img src="img/BrianSheridan_pic.jpg" alt="Brian Sheridan" class="profile-photo">
+            <h1 class="site-title">Brian<br>Sheridan</h1>
+        </div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="nav-container"> 
-        <div class="nav-toggle" id="nav-toggle">☰</div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="research.html">Research</a></li>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="gaeilge.html">Gaeilge</a></li>
         </ul>
-      </div>
-    </nav>  
+    </nav>
 
-    <div class="hero-content">
-      <div class="hero-text">
-        <a href="index.html"><h1>Brian Sheridan</h1></a> 
-        <p>Graduate MSc Physics ETH Zürich</p> 
-        <p>Researcher • Physicist</p>
-      </div>
+    <!-- Main page content -->
+    <main class="main-content">
+        <section class="content-card">
+            <h2>Welcome</h2>              
+            <p>
+                I am a PhD student researching gravitational waves at the 
+                <a href="https://www.nottingham.ac.uk/mathematics/research/gravity.aspx">University of Nottingham</a>. 
+                Since obtaining a master's of physics at <a href="https://ethz.ch/en.html">ETH Zürich</a> I have pursued 
+                research projects in strong gravitational lensing and gravitational wave mode analysis for 
+                extreme-mass-ratio-inspirals (EMRIs). I enjoy using both numerical and theoretical techniques to better 
+                understand and model astrophysical systems. My research goals are to focus on developing machine learning 
+                tools for EMRI gravitational wave systems, as well as modelling the astrophysical environments around them, 
+                such as accretion disks. 
+            </p>
+        </section>
 
-      <div class="profile-pic">
-        <img src="img/BrianSheridan_pic.jpg" alt="Profile picture">
-      </div>
-    </div>
+        <section class="content-card">
+            <h2>Research Interests</h2>
+            <p>
+                My research interests primarily revolve around general relativity, more specifically 
+                gravitational waves and binary black hole systems. I have had extensive experience modelling EMRI systems, 
+                merging theoretical understanding, computational modelling and statistical analysis to extract relevant 
+                insights from theses systems, highlighting this intersection of analysis technqiues. 
+            </p>
 
-    <div class="scroll-down">
-      <span>more below</span>
-      <a href="#about" class="scroll down"> 
-      <div class="arrow"></div>
-      </a>  
-    </div> 
-  </section>  
+            <p>
+                My most recent project investigated the relevance of various gravitational wave modes used in the generation of 
+                waveforms by the 
+                <a href="https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms">FastEMRIWaveforms</a> 
+                (FEW) package, widespread in use across the scientific community. I analysed the modal coverage across 
+                parameter space and suggested the most effective way to extend modal space to better cover the possible 
+                parameter combinations, providing a clear understanding of the structure and extent of the possible 
+                excited modes. 
+            </p>
+        </section>
 
-  <!-- About me section -->
-  <section class="card-section" id="about"> 
-    <div class="card">
-      <div class="card-content">
-        <h2>About</h2>
-        <p>A physics graduate with strong experience in astrophysics and data analysis.</p> 
-      </div>
-      <div class="card-link">
-        <a href="about.html">Learn more →</a> 
-      </div>
-    </div>
-  </section>
+        <section class="content-card">
+            <h2>Brief CV</h2> 
+            <ul>
+                <li>PhD Mathematics -
+                     <a href="https://www.nottingham.ac.uk/mathematics/research/gravity.aspx">University of Nottingham</a> 
+                     (2026 - 2030)</li>
+                <li>Research Internship -
+                     <a href="https://www.southampton.ac.uk/research/groups/gravity">University of Southampton</a> 
+                     (2025 - 2026)</li>
+                <li>Research Internship -
+                     <a href="https://www.toelt-ailab.com/">Toelt AI</a> 
+                     (2025 - 2025)</li>
+                <li>MSc Physics  -
+                     <a href="https://ethz.ch/en.html">ETH Zürich</a> 
+                     (2022 - 2024)</li>
+                <li>BSc Theoretical Physics  -
+                     <a href="https://www.ucd.ie/">University College Dublin</a> 
+                     (2018 - 2022)</li>
+            </ul>
+        </section>
 
-  <!-- Research section -->
-  <section class="card-section" id="research"> 
-    <div class="card">
-      <div class="card-content">
-        <h2>Research</h2>
-        <p>Projects focused on computational astrophysics, including general relativity and planetary formation.</p>
-      </div>
-      <div class="card-link">
-        <a href="research.html">Learn more →</a>
-      </div>
-    </div>
-  </section> 
-
-  <!-- Bog posts section -->
-  <!-- <section class="card-section" id="Posts"> 
-    <div class="card">
-      <div class="card-content">
-        <h2>Posts</h2>
-        <p>A collection of posts and musings on interesting topics.</p> 
-      </div>
-      <div class="card-link">
-        <a href="posts.html">Learn more →</a>
-      </div>
-    </div>
-  </section>    
-  -->
-
-  <!-- Footer section -->
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Brian Sheridan. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="contact.html">Contact</a> 
-        <a href="https://www.linkedin.com/in/brian-sheridan-57a5101ba/" target="_blank">LinkedIn</a> 
-        <a href="https://github.com/briansheridan00" target="_blank">GitHub</a> 
-      </div>
-    </div>
-  </footer>
+        <section class="content-card">
+            <h2>Other Interests</h2>
+            <p>
+                Beyond research I enjoy hiking, playing traditional Irish music on the fiddle and concertina, 
+                and learning languages, especially German. 
+            </p>
+        </section>        
 
 
-  <script src="js/script.js"></script> 
-</body>  
+    </main>
+
+    <!-- Footer section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Brian Sheridan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/briansheridan00" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/brian-sheridan-57a5101ba/" target="_blank">LinkedIn</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-</html> 
+</html>

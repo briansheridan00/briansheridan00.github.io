@@ -2,60 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact - Brian Sheridan</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/hero.css" /> 
-  <link rel="stylesheet" href="css/cards.css"/> 
-  <link rel="stylesheet" href="css/footer.css"/>  
-  <link rel="stylesheet" href="css/navigation.css"/> 
-  <link rel="stylesheet" href="css/page-cards.css"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Brian Sheridan</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/cards.css"/>   
   <link rel="icon" type="image/png" href="img/favicon.png"/> 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet"> 
-</head> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
 <body>
 
+    <!-- Fixed left sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img src="img/BrianSheridan_pic.jpg"
+                alt="Brian Sheridan"
+                class="profile-photo">
 
-  <header class="banner"> 
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="nav-container"> 
-        <div class="nav-toggle" id="nav-toggle">☰</div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="research.html">Research</a></li>
+            <h1 class="site-title">
+                Brian<br>
+                Sheridan
+            </h1>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="gaeilge.html">Gaeilge</a></li>
         </ul>
-      </div>
-    </nav>     
-    <div class="page-title"> 
-    <a href="index.html"><h1>Brian Sheridan</h1></a>
-    </div> 
-  </header> 
+    </nav>
 
+    <!-- Main page content -->
+    <main class="main-content">
+        
+        <!-- Contact Form Card -->
+        <section class="content-card">
+            <h2>Contact Me</h2>
+            <p>
+                Feel free to reach out using the form below:
+            </p>
+            
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEsTxLYWnam8UObfLTX-vo1EalTBspxikptE4EfEb7vNKrIw/viewform?embedded=true" 
+                    width="100%" 
+                    height="741" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    style="border: none; border-radius: 8px;">Loading…</iframe>
+        </section>
 
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEsTxLYWnam8UObfLTX-vo1EalTBspxikptE4EfEb7vNKrIw/viewform?embedded=true" 
-          width="100%" 
-          height="741" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0">Loading…</iframe> 
+    </main>
 
+    <!-- Footer section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Brian Sheridan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/briansheridan00" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/brian-sheridan-57a5101ba/" target="_blank">LinkedIn</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Footer section -->
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Brian Sheridan. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="contact.html">Contact</a> 
-        <a href="https://www.linkedin.com/in/brian-sheridan-57a5101ba/" target="_blank">LinkedIn</a> 
-        <a href="https://github.com/briansheridan00" target="_blank">GitHub</a> 
-      </div>
-    </div>
-  </footer> 
-
-  <!-- Toggle navigation bar -->  
-  <script src="js/script.js"></script> 
+    <script src="js/script.js"></script>
 </body>
 </html>

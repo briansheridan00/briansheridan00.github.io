@@ -1,8 +1,12 @@
 .site-footer {
+  margin-left: 380px;
   background-color: #f4f4f4;
   padding: 2rem 1rem;
   border-top: 1px solid #ddd;
   font-size: 0.9rem;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-content {
@@ -30,7 +34,12 @@
 
 
 /* Responsive footer */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .site-footer {
+    margin-left: 0;
+    margin-top: 130px; /* Offset to clear the fixed mobile top bar */
+  }
+
   .footer-content {
     flex-direction: column;
     align-items: flex-start;

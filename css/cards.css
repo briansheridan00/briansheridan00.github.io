@@ -1,88 +1,61 @@
-.card-section {
-  background-color: #f4f4f4;
-  padding: 2rem 2rem;
+/* Content cards */
+
+.content-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    padding: 30px;
+    margin: 30px 20px;
+    max-width: 900px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: box-shadow 0.25s ease;
+
+    width: calc(100% - 60px);
+    box-sizing: border-box;    
 }
 
-.card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 2rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-}
-
-.card-content {
-  max-width: 70%;
-}
-
-.card-content p {
-  margin-bottom: 1.2rem;
-  line-height: 1.6;
-}
-
-.card-content h2 {
-  margin-top: 0;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-} 
-
-.card-content a {
-  text-decoration: none;
-  color: #0057ff;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease;  
-}
-
-.card-content a:hover{
-  border-color: #0057ff;  
-}
-
-.card-link a {
-  text-decoration: none;
-  color: #0057ff;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease;
-}
-
-.card-link a:hover {
-  border-color: #0057ff;
+.content-card:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 
-/* Responsive card resizing */
-@media (max-width: 768px) {
-  .card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem;
-  }
+/* Card headings */
 
-  .card-content {
-    max-width: 100%;
+.content-card h2 {
+    margin-top: 0;
+    font-family: 'Bookman Old Style', 'Bookman', URW Bookman, serif;
+    font-size: 2rem;
+    color: #2b2b2b;
+}
+
+
+/* Card text */
+.content-card p,
+.content-card ul,
+.content-card ol,
+.content-card li {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.7;
+    color: #444; 
+}
+
+.content-card ul,
+.content-card ol {
+    padding-left: 20px;
     margin-bottom: 1rem;
-  }
+}
 
-  /* New addition to center images */
-  .card-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* This centers children horizontally */
-    width: 100%;
-  }
 
-  .card-link {
-    align-self: flex-end;
-  }
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .content-card {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
 }

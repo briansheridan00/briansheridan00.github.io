@@ -1,24 +1,8 @@
 // Scripts to be added here // 
 
+const menuButton = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-// Responsive navigation bar  
-//const toggle = document.getElementById('nav-toggle');
-//const links = document.getElementById('nav-links');
-
-//toggle.addEventListener('click', () => {
-//    links.classList.toggle('active');
-//}); 
-
-
-
-// Responsive navigation bar  
-
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("nav-toggle");
-  const links = document.getElementById("nav-links");
-
-
-  toggle.addEventListener("click", () => {
-      links.classList.toggle("active");
-  }); 
+menuButton.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
 });
