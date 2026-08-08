@@ -47,6 +47,17 @@
     margin-bottom: 1rem;
 }
 
+/* Publication Author List */
+.content-card .authors {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.content-card .authors strong {
+    color: #2b2b2b; /* Highlights your name in the author list */
+}
+
+
 
 /* Responsive */
 
