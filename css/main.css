@@ -218,4 +218,33 @@ p a:hover,
         margin-left: 0;
         margin-top: 130px; /* Offset to clear the fixed mobile top bar */
     }
+
+    /* Convert table layout to block layout */
+    .cv-table, 
+    .cv-table tbody, 
+    .cv-table tr, 
+    .cv-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Adjust table row spacing */
+    .cv-table tr {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    /* Clean up individual cell styling on mobile */
+    .cv-table td {
+        padding: 0.15rem 0;
+        border-bottom: none; /* Borders are handled by the <tr> instead */
+    }
+
+    /* Left-align years and allow them to flow normally */
+    .cv-table .cv-years {
+        text-align: left;
+        white-space: normal;
+        font-size: 0.9em;
+    }
 }
