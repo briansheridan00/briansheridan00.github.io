@@ -66,6 +66,98 @@
 
 
 
+
+/* Publication Card Enhancements */
+.publication-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.pub-header {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
+.pub-number {
+    font-style: bold; /* italic; */
+    color: #888888; /* #0057ff; */
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.content-card .pub-title {
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.4;
+    color: #1a1a1a;
+}
+
+.pub-authors {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.pub-authors strong {
+    color: #1a1a1a;
+    /*text-decoration: underline;*/
+    /*text-decoration-color: #0057ff;*/
+}
+
+.pub-meta {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.pub-journal {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.pub-year::before {
+    content: "•";
+    margin-right: 0.5rem;
+    color: #999;
+}
+
+/* Action Buttons */
+.pub-actions {
+    margin-top: 0.4rem;
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to a new line on small screens */
+    gap: 0.5rem 0.75rem; /* Row gap (vertical): 0.5rem, Column gap (horizontal): 0.75rem */
+}
+
+.pub-btn {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #f4f6f8;
+    color: #0057ff !important;
+    border: 1px solid rgba(0, 87, 255, 0.2);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.pub-btn:hover {
+    background-color: #0057ff;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    opacity: 1 !important;
+}
+
+
+
 /* Responsive */
 
 @media (max-width: 768px) {

@@ -14,9 +14,13 @@ p a:hover,
 }
 
 
+.main-content, 
+.content-card {
+    margin-left: 320px;
+}
+
 
 /* Fixed left sidebar */
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -37,12 +41,6 @@ p a:hover,
     color: white;
     padding: 40px 25px;
     box-sizing: border-box;
-}
-
-.site-title {
-    margin: 0 0 40px 0;
-    font-size: 1.8rem;
-    font-family: 'Bookman Old Style', 'Bookman', URW Bookman, serif;
 }
 
 .sidebar ul {
@@ -71,10 +69,6 @@ p a:hover,
     color: #b0b0b0;
 }
 
-.main-content, 
-.content-card {
-    margin-left: 320px;
-}
 
 /* Hide the menu button on desktop */
 .menu-toggle {
