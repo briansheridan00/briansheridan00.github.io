@@ -5,7 +5,7 @@
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 14px;
     padding: 30px;
-    margin: 30px 20px;
+    margin: 30px auto; /*20px;*/
     max-width: 900px;
 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -163,9 +163,10 @@
 @media (max-width: 768px) {
 
     .content-card {
-        margin: 20px;
+        margin: 20px auto;
         padding: 20px;
         border-radius: 12px;
+        width: calc(100% - 40px); /* Ensures padding on smaller viewports */
     }
 
 }

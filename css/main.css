@@ -14,10 +14,12 @@ p a:hover,
 }
 
 
-.main-content, 
-.content-card {
+.main-content {
     margin-left: 320px;
 }
+/*.content-card {
+    margin-left: 320px;
+}*/
 
 
 /* Fixed left sidebar */
